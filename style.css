@@ -15,11 +15,14 @@ body {
 }
 
 main {
+  background-color: white;
+}
+
+.container {
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  background-color: white;
   padding: 20px;
 }
 
@@ -113,5 +116,26 @@ section.active {
   border-radius: 3px;
   border: none;
   padding: 8px 40px 8px 40px;
+}
+
+.scroller {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  main {
+    width: 90%;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
 }
 
